@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="search" class="search_area">
+      <form id="sform" name="sform" action="https://search.naver.com/search.naver" method="get" role="search">
+        <fieldset>
+          <legend class="blind">검색</legend>
+          <div class="green_window">
+            <input
+              id="query"
+              name="query"
+              type="text"
+              maxlength="255"
+              class="input_text"
+              tabindex="1"
+              autocomplete="off"
+              placeholder="검색어를 입력해 주세요."
+            />
+          </div>
+          <button id="search_btn" type="submit" title="검색" tabindex="3" class="btn_submit">
+            <span class="blind">검색</span>
+            <span class="ico_search_submit"></span>
+          </button>
+        </fieldset>
+      </form>
+
+      <div class="autocomplete">
+        <a href="#" role="button" id="nautocomplete" tabindex="2" class="btn_arw _btn_arw fold" aria-pressed="true" data-atcmp-element="">
+          <span class="blind">자동완성 레이어</span>
+          <span class="ico_arr"></span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
